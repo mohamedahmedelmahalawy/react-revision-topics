@@ -32,18 +32,11 @@ function RevRef() {
   return (
     <div>
       <h1 ref={myRef}>Hi</h1>
-      <button
-        onClick={btnHandler}
-        className="bg-blue-300 text-black font-semibold px-6 py-2 rounded"
-      >
+      <button onClick={btnHandler} className="btn">
         Re-render
       </button>
       <div>
-        <input
-          ref={inputRef}
-          type="text"
-          className="bg-red-300  text-black p-2 font-medium"
-        />
+        <input ref={inputRef} type="text" className="input" />
       </div>
     </div>
   );

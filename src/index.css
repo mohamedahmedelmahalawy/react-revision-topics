@@ -1,4 +1,14 @@
 @import "tailwindcss";
+
+@layer components {
+  .btn {
+    @apply bg-blue-300 text-black font-semibold px-6 py-2 rounded;
+  }
+  .input {
+    @apply bg-slate-800  text-white p-2 font-medium border-2 border-slate-600;
+  }
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
