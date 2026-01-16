@@ -2,7 +2,6 @@ import { useReducer, useRef, type ChangeEvent } from "react";
 
 interface State {
   count: number;
-  error: string | null;
 }
 interface Action {
   type:
@@ -17,7 +16,6 @@ interface Action {
 
 const initalState: State = {
   count: 0,
-  error: null,
 };
 
 const reducer = (state: State, action: Action) => {
@@ -25,10 +23,12 @@ const reducer = (state: State, action: Action) => {
 
   switch (action.type) {
     case "INCREMENT":
+      if (state.count + 1 > 1000) return state;
       return { ...state, count: state.count + 1 };
     case "DECREMENT":
       return { ...state, count: state.count - 1 };
     case "INCREMENT_VALUE":
+      if (state.count + (action.payload ?? 0) > 1000) return state;
       return { ...state, count: state.count + (action.payload ?? 0) };
     case "DECREMENT_VALUE":
       return { ...state, count: state.count - (action.payload ?? 0) };
@@ -95,6 +95,7 @@ function RevReducer() {
             </button>
           </div>
         </div>
+        {state.count === 1000 && <h3>can't increment more</h3>}
       </div>
     </div>
   );
