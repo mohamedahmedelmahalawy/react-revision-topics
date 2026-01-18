@@ -7,6 +7,28 @@
   .input {
     @apply bg-slate-800  text-white p-2 font-medium border-2 border-slate-600;
   }
+  .square {
+    @apply bg-white border border-[#999] float-left text-[24px] font-bold
+         leading-8.5 h-8.5 w-8.5 text-center
+         -mr-px -mt-px p-0 text-black;
+  }
+
+  .board-row::after {
+    @apply clear-both table;
+    content: "";
+  }
+
+  .status {
+    @apply mb-2.5;
+  }
+
+  .game {
+    @apply flex flex-row;
+  }
+
+  .game-info {
+    @apply ml-5;
+  }
 }
 
 :root {

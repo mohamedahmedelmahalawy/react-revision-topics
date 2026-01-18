@@ -95,7 +95,9 @@ function RevReducer() {
             </button>
           </div>
         </div>
-        {state.count === 1000 && <h3>can't increment more</h3>}
+        {state.count === 1000 && (
+          <h3 className="text-red-500 text-center">Can't increment more</h3>
+        )}
       </div>
     </div>
   );
