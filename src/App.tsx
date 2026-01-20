@@ -2,6 +2,7 @@
 // import RevReducer from "./components/rev-reducer/RevReducer";
 // import RevRef from "./components/rev-ref/RevRef";
 
+import FormAction from "./components/form-action/FormAction";
 import TikTakToe from "./components/tik-tak-toe/TikTakToe";
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       {/* <RevRef /> */}
       {/* <RevReducer /> */}
       {/* <RevCallback /> */}
-      <TikTakToe />
+      {/* <TikTakToe /> */}
+      <FormAction />
     </>
   );
 }
