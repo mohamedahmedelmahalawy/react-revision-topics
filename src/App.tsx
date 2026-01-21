@@ -2,8 +2,10 @@
 // import RevReducer from "./components/rev-reducer/RevReducer";
 // import RevRef from "./components/rev-ref/RevRef";
 
-import FormAction from "./components/form-action/FormAction";
-import TikTakToe from "./components/tik-tak-toe/TikTakToe";
+import DeferredValue from "./components/deferred-value/DeferredValue";
+import DeferredValueListTwo from "./components/deferred-value/DeferredValueListTwo";
+// import FormAction from "./components/form-action/FormAction";
+// import TikTakToe from "./components/tik-tak-toe/TikTakToe";
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
       {/* <RevReducer /> */}
       {/* <RevCallback /> */}
       {/* <TikTakToe /> */}
-      <FormAction />
+      {/* <FormAction /> */}
+      {/* <DeferredValue /> */}
+      <DeferredValueListTwo />
     </>
   );
 }
